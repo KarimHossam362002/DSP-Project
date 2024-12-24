@@ -57,10 +57,10 @@ def plot_square_wave():
 
 
 # 3 Function to plot a signal mn file
-def plot_from_file(file_path="Dataset/mitbih_test.csv"):
+def plot_from_file(file_path="Dataset/Traffic_Signal.csv"):
     data = np.loadtxt(file_path, delimiter=",")
     plt.figure(figsize=(10, 4))
-    plt.plot(data, label="Signal from file mitbih_test")
+    plt.plot(data, label="Signal from file Traffic_Signal")
     plt.title("Signal from File")
     plt.xlabel("Samples")
     plt.ylabel("Amplitude")
@@ -97,4 +97,4 @@ if __name__ == "__main__":
     # plot_from_equation("np.sin(2 * np.pi * 5 * t)", (0, 1))  # Example equation
 
     # Plot signal from file (file should contain a single column of numeric data)
-    plot_from_file("Dataset/mitbih_test.csv")  # Uncomment and provide the file path
+    plot_from_file("Dataset/Traffic_Signal.csv")  # Uncomment and provide the file path
