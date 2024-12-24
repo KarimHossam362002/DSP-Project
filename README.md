@@ -1,101 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Signal Processing (DSP) Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #0078D4;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        code {
-            background: #eef;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Digital Signal Processing (DSP) Project</h1>
-        <p>This project provides an in-depth exploration of Digital Signal Processing (DSP), guiding you through foundational to advanced concepts. The project is divided into milestones, each focusing on specific DSP techniques and their practical applications.</p>
+# Digital Signal Processing (DSP) Project
 
-        <h2>Project Outline</h2>
-        <p>By completing this project, you will develop hands-on experience with DSP operations, enhancing your skills for real-world applications.</p>
+## Course Project Overview
+This project explores fundamental concepts of Digital Signal Processing (DSP), from basic signal representation to advanced frequency domain operations. By completing this project, you will develop a comprehensive understanding of signal processing techniques used in real-world applications.
 
-        <h2>Milestone 1: Signal Representation, Sampling, and Quantization</h2>
-        <ul>
-            <li><strong>Generate and Plot Signals:</strong>
-                <ul>
-                    <li>Sinusoidal Wave: Plot continuous and discrete sinusoidal waves to understand periodic signals.</li>
-                    <li>Square Wave: Contrast the sinusoidal wave with a square wave to explore digital signal applications.</li>
-                    <li>Real-world Signals from Files: Import and plot real-world data.</li>
-                    <li>Custom Equations: Generate and plot signals based on custom mathematical equations.</li>
-                </ul>
-            </li>
-            <li><strong>Sampling:</strong> Apply a specified sampling rate and demonstrate aliasing effects.</li>
-            <li><strong>Quantization:</strong> Quantize sampled signals and explore the impact of quantization noise.</li>
-        </ul>
+---
 
-        <h2>Milestone 2: Signal Enhancement through Smoothing and Noise Reduction</h2>
-        <ul>
-            <li><strong>Moving Average Filter:</strong> Smooth signals using a moving average filter.</li>
-            <li><strong>Noise Reduction:</strong> Apply low-pass filters and other techniques to reduce noise.</li>
-        </ul>
+## Project Milestones
 
-        <h2>Milestone 3: Signal Manipulation with Convolution and Correlation</h2>
-        <ul>
-            <li><strong>Convolution:</strong> Combine signals using convolution, essential for filtering and signal modification.</li>
-            <li><strong>Correlation:</strong> Measure signal similarity using correlation, useful for pattern recognition and signal matching.</li>
-        </ul>
+### **Milestone 1: Signal Representation, Sampling, and Quantization**
+#### Goal:
+Understand how to create, sample, and quantize signals as the foundation for all subsequent processing.
 
-        <h2>Milestone 4: Frequency Domain Filtering</h2>
-        <ul>
-            <li><strong>Low Pass Filter:</strong> Retain low frequencies while removing high-frequency noise.</li>
-            <li><strong>High Pass Filter:</strong> Preserve high frequencies and remove low-frequency components.</li>
-            <li><strong>Band Pass Filter:</strong> Isolate frequencies within a specific range.</li>
-            <li><strong>Band Reject Filter:</strong> Remove specific frequency bands.</li>
-        </ul>
+#### Tasks:
+1. **Generate and Plot Signals**:
+   - **Sinusoidal Wave**: Visualize continuous and discrete sinusoidal waves to understand periodic signals.
+   - **Square Wave**: Compare square waves with sinusoidal waves, understanding their application in digital systems.
+   - **Real-world Signals**: Import and plot real-world data from external files.
+   - **Custom Equations**: Generate and plot signals based on mathematical equations. *(Task not completed yet.)*
 
-        <h2>Conclusion</h2>
-        <p>By completing this project, you will gain a solid understanding of DSP techniques, including signal generation, sampling, quantization, smoothing, noise reduction, and filtering. These skills are foundational for applications in communications, audio processing, and beyond.</p>
+2. **Sampling**:
+   - Apply a specified sampling rate to continuous signals, illustrating aliasing and the impact of sampling.
 
-        <footer>
-            &copy; 2024 DSP Project | Created for Digital Signal Processing Coursework
-        </footer>
-    </div>
-</body>
-</html>
+3. **Quantization**:
+   - Quantize sampled signals using specified quantization levels, exploring how resolution reduction introduces quantization noise.
+
+#### Outcome:
+A set of signals ready for enhancement and noise reduction in **Milestone 2**.
+
+---
+
+### **Milestone 2: Signal Enhancement through Smoothing and Noise Reduction**
+#### Goal:
+Improve signal quality by reducing noise and enhancing smoothness.
+
+#### Tasks:
+1. **Moving Average Filter (Smoothing)**:
+   - Apply a moving average filter to reduce high-frequency noise.
+
+2. **Noise Reduction**:
+   - Use techniques like low-pass filtering to produce cleaner signals.
+
+#### Outcome:
+Enhanced signals prepared for convolution and correlation in **Milestone 3**.
+
+---
+
+### **Milestone 3: Signal Manipulation with Convolution and Correlation**
+#### Goal:
+Combine and compare signals using convolution and correlation.
+
+#### Tasks:
+1. **Convolution**:
+   - Perform convolution between two signals to understand filtering and signal combination.
+
+2. **Correlation**:
+   - Calculate the correlation between two signals to measure similarity, useful for pattern recognition and signal matching.
+
+#### Outcome:
+Processed signals for frequency domain filtering in **Milestone 4**.
+
+---
+
+### **Milestone 4: Frequency Domain Filtering**
+#### Goal:
+Analyze and shape signals using frequency domain filters.
+
+#### Tasks:
+1. **Frequency Domain Filters**:
+   - **Low Pass Filter**: Retain low frequencies, removing high-frequency noise. *(Cutoff frequency: 5 Hz)*
+   - **High Pass Filter**: Preserve high frequencies, removing low-frequency drift. *(Cutoff frequency: 5 Hz)*
+   - **Band Pass Filter**: Allow frequencies between 3 Hz and 8 Hz, attenuating others.
+   - **Band Reject Filter**: Attenuate frequencies between 3 Hz and 8 Hz, allowing others to pass.
+
+#### Outcome:
+Mastery of filtering techniques essential for advanced DSP operations.
+
+---
+
+## Conclusion
+This project provides hands-on experience with DSP techniques like signal generation, sampling, quantization, smoothing, noise reduction, and filtering. These foundational skills are valuable for real-world applications such as communications, audio processing, and image analysis.
+
+---
+
+## Project Structure
+- **Milestone1/**: Signal representation, sampling, and quantization code.
+- **Milestone2/**: Signal enhancement and noise reduction implementations.
+- **Milestone3/**: Convolution and correlation operations.
+- **Milestone4/**: Frequency domain filtering scripts.
+
+---
+
+## How to Run the Project
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-repo/dsp-project.git
+   cd dsp-project
+2. Install dependencies:
+   ```bash
+   pip install numpy,matplotlib,scipy
+3. Run individual milestones:
+   ```bash
+   python Milestone1/main.py
+   python Milestone2/main.py    
+   python Milestone3/main.py
+   python Milestone4/main.py
+
+
+### Instructions:
+- Replace `https://github.com/your-repo/dsp-project.git` with your GitHub repository link.
+- Customize sections as needed to suit your project!
+
+##Feel free to contribute by submitting pull requests or reporting issues!
