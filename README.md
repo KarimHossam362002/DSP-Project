@@ -100,10 +100,10 @@ This project provides hands-on experience with DSP techniques like signal genera
    pip install numpy,matplotlib,scipy
 3. Run individual milestones:
    ```bash
-   python Milestone1/main.py
-   python Milestone2/main.py    
-   python Milestone3/main.py
-   python Milestone4/main.py
+   python Milestone1/TASK#_NAME.py
+   python Milestone2/TASK#_NAME.py    
+   python Milestone3/TASK#_NAME.py
+   python Milestone4/TASK#_NAME.py
 
 
 ### Instructions:
