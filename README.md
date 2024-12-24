@@ -110,4 +110,4 @@ This project provides hands-on experience with DSP techniques like signal genera
 - Replace `https://github.com/your-repo/dsp-project.git` with your GitHub repository link.
 - Customize sections as needed to suit your project!
 
-##Feel free to contribute by submitting pull requests or reporting issues!
+## Feel free to contribute by submitting pull requests or reporting issues!
